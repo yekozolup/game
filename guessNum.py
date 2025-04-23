@@ -6,22 +6,22 @@ def start():
 
     print(f"Введіть число від 1 до 10:")
 
-    while countStep < 3:
+    while countStep < 4:
         countStep += 1
         userNum = int(input())
         if userNum == randNum:
             print(f"Ви ввели правильне число!")
             print(f"Вітаємо Вас!")
             break
-        elif countStep == 3:
+        elif countStep == 4:
             print(f"Ви програли :(")
         else:
             print(f"Ви не вгадали :(")
-            print(f"У вас ще є {3 - countStep} спрб. Введіть число від 1 до 10:")
+            print(f"У вас ще є {4 - countStep} спрб. Введіть число від 1 до 10:")
     else:
         print(f"Задане число - {randNum}")
 
-print(f"Вітаємо в грі Guess Number! Ви маєте 3 спроби на вгадування числа.")
+print(f"Вітаємо в грі Guess Number! Ви маєте 4 спроби на вгадування числа.")
 isPlay = "y"
 while isPlay == "Y" or isPlay=="y":
     start()
