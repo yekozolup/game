@@ -21,7 +21,7 @@ def start():
     else:
         print(f"Задане число - {randNum}")
 
-print(f"Вітаємо в грі Вгадай число!")
+print(f"Вітаємо в грі Guess Number!")
 isPlay = "y"
 while isPlay == "Y" or isPlay=="y":
     start()
